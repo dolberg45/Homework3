@@ -13,6 +13,13 @@
 		0749B3EA25559A5800688999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0749B3E825559A5800688999 /* Main.storyboard */; };
 		0749B3EC25559A5B00688999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0749B3EB25559A5B00688999 /* Assets.xcassets */; };
 		0749B3EF25559A5B00688999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0749B3ED25559A5B00688999 /* LaunchScreen.storyboard */; };
+		0749B3F925559A7600688999 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0749B3F825559A7600688999 /* Post.swift */; };
+		0749B3FD25559B5D00688999 /* PostProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0749B3FC25559B5D00688999 /* PostProducer.swift */; };
+		075E672B25569CB50074A09A /* CustomPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 075E672A25569CB50074A09A /* CustomPostCell.xib */; };
+		075E6731255825AE0074A09A /* EditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075E6730255825AE0074A09A /* EditPostViewController.swift */; };
+		0763576B2555A639007034B6 /* FullPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763576A2555A639007034B6 /* FullPostViewController.swift */; };
+		0763576E2555A735007034B6 /* CustomContentForPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0763576D2555A735007034B6 /* CustomContentForPostCell.xib */; };
+		076357712555AA2A007034B6 /* CustomPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076357702555AA2A007034B6 /* CustomPostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		0749B3EB25559A5B00688999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0749B3EE25559A5B00688999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0749B3F025559A5B00688999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0749B3F825559A7600688999 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0749B3FC25559B5D00688999 /* PostProducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProducer.swift; sourceTree = "<group>"; };
+		075E672A25569CB50074A09A /* CustomPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomPostCell.xib; sourceTree = "<group>"; };
+		075E6730255825AE0074A09A /* EditPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostViewController.swift; sourceTree = "<group>"; };
+		0763576A2555A639007034B6 /* FullPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPostViewController.swift; sourceTree = "<group>"; };
+		0763576D2555A735007034B6 /* CustomContentForPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomContentForPostCell.xib; sourceTree = "<group>"; };
+		076357702555AA2A007034B6 /* CustomPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,54 @@
 		0749B3E125559A5800688999 /* Homework3 */ = {
 			isa = PBXGroup;
 			children = (
+				076357682555A5B1007034B6 /* ViewControllers */,
+				076357692555A5BD007034B6 /* TableViewCells */,
+				0749B3F725559A6100688999 /* Model */,
+				076357732555B39D007034B6 /* Storyboard */,
 				0749B3E225559A5800688999 /* AppDelegate.swift */,
 				0749B3E425559A5800688999 /* SceneDelegate.swift */,
-				0749B3E625559A5800688999 /* ViewController.swift */,
-				0749B3E825559A5800688999 /* Main.storyboard */,
 				0749B3EB25559A5B00688999 /* Assets.xcassets */,
 				0749B3ED25559A5B00688999 /* LaunchScreen.storyboard */,
 				0749B3F025559A5B00688999 /* Info.plist */,
 			);
 			path = Homework3;
+			sourceTree = "<group>";
+		};
+		0749B3F725559A6100688999 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0749B3F825559A7600688999 /* Post.swift */,
+				0749B3FC25559B5D00688999 /* PostProducer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		076357682555A5B1007034B6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0749B3E625559A5800688999 /* ViewController.swift */,
+				0763576A2555A639007034B6 /* FullPostViewController.swift */,
+				075E6730255825AE0074A09A /* EditPostViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		076357692555A5BD007034B6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				0763576D2555A735007034B6 /* CustomContentForPostCell.xib */,
+				076357702555AA2A007034B6 /* CustomPostCell.swift */,
+				075E672A25569CB50074A09A /* CustomPostCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		076357732555B39D007034B6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0749B3E825559A5800688999 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0763576E2555A735007034B6 /* CustomContentForPostCell.xib in Resources */,
 				0749B3EF25559A5B00688999 /* LaunchScreen.storyboard in Resources */,
 				0749B3EC25559A5B00688999 /* Assets.xcassets in Resources */,
+				075E672B25569CB50074A09A /* CustomPostCell.xib in Resources */,
 				0749B3EA25559A5800688999 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +193,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0749B3E725559A5800688999 /* ViewController.swift in Sources */,
+				0749B3FD25559B5D00688999 /* PostProducer.swift in Sources */,
+				075E6731255825AE0074A09A /* EditPostViewController.swift in Sources */,
 				0749B3E325559A5800688999 /* AppDelegate.swift in Sources */,
 				0749B3E525559A5800688999 /* SceneDelegate.swift in Sources */,
+				0763576B2555A639007034B6 /* FullPostViewController.swift in Sources */,
+				0749B3F925559A7600688999 /* Post.swift in Sources */,
+				076357712555AA2A007034B6 /* CustomPostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
